@@ -14,6 +14,7 @@ class DocumentFacade (
 
     fun uploadDocument(file: MultipartFile,  fileLabel: String?): String {
         val url = this.amazonClient.uploadFile(file, "test", "abhinav")
+        log.info("Document uploaded with url $url")
         return url
     }
 }

@@ -11,4 +11,8 @@ class CustomerService(
     fun createCustomer(customer: Customer): Customer {
         return customerRepository.save(customer)
     }
+
+    fun updateCustomer(customer: Customer): Customer {
+        return customerRepository.save(customer)
+    }
 }
